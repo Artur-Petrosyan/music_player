@@ -1,29 +1,41 @@
 import '../App.css';
 import GlobalStyles from "./assets/styles/globalStyles";
-import Flex from "./assets/styles/Flex";
-import Button from "./assets/styles/Button";
-import Icon from "./assets/styles/Icon";
+import Flex from "core/ui/components/styled-components/Flex";
+import Button from "core/ui/components/styled-components/Button";
+import Icon from "core/ui/components/styled-components/Icon";
 import playIcon from "./assets/icons/play.svg"
 import plusIcon from "./assets/icons/plus.svg"
+import Header from "core/ui/components/styled-components/Header";
+import Input from "core/ui/components/styled-components/Input";
+import Select from "../core/ui/components/styled-components/Select";
+
 function App() {
     return (
         <>
             <GlobalStyles/>
             <div className="App">
-                <Flex>
-                    <Button>
-                        <Flex justify="space-between" align="center">
-                            <Icon src={playIcon} />
-                            <span>Play All</span>
+                <Header>
+                    <Flex justify="space-between">
+                        <Flex>
+                            <Button>
+                                <Flex justify="space-between" align="center">
+                                    <Icon src={playIcon}/>
+                                    <span>Play All</span>
+                                </Flex>
+                            </Button>
+                            <Button>
+                                <Flex justify="space-between" align="center">
+                                    <Icon src={plusIcon}/>
+                                    <span>Add All</span>
+                                </Flex>
+                            </Button>
                         </Flex>
-                    </Button>
-                    <Button>
                         <Flex justify="space-between" align="center">
-                            <Icon src={plusIcon} />
-                            <span>Add All</span>
+                            <Input/>
+                            <Select />
                         </Flex>
-                    </Button>
-                </Flex>
+                    </Flex>
+                </Header>
             </div>
         </>
     );
