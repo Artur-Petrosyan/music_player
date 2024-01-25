@@ -1,13 +1,14 @@
 import '../App.css';
-import AddAllButton from "core/ui/components/styled-components/AddAllButton";
+import GlobalStyles from "./styles/globalStyles";
 
 function App() {
     return (
-        <div className="App">
-            <AddAllButton>
-                Hello
-            </AddAllButton>
-        </div>
+        <>
+            <GlobalStyles/>
+            <div className="App">
+
+            </div>
+        </>
     );
 }
 
