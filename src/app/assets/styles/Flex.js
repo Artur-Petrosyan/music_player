@@ -20,7 +20,7 @@
  * };
  */
 
-import React from 'eact';
+import React from 'react';
 import styled from "styled-components";
 
 const StyledFlex = styled.div`
