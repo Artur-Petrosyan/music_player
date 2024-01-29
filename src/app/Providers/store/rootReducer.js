@@ -14,6 +14,8 @@
  * });
  */
 import { combineReducers } from "@reduxjs/toolkit";
+import songReducer from './songSlice'
 
-
-export const rootReducer = combineReducers({});
+export const rootReducer = combineReducers({
+    songs : songReducer
+});
