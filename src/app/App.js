@@ -33,10 +33,10 @@ function App() {
                         <Flex justify="space-between" align="center">
                             <Button>Track Number</Button>
                             <Input/>
-                            <Select />
                         </Flex>
                     </Flex>
                 </Header>
+                <SongList />
             </div>
         </>
     );
