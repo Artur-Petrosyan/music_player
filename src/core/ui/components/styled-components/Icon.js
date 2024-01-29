@@ -22,10 +22,10 @@
 import styled from "styled-components";
 
 const StyledIcon = styled.img`
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     margin-right: ${( {marginRight} ) => marginRight || 0};
-
+    cursor: pointer;
 `
 const Icon = ( props ) => {
     const {src} = props;
