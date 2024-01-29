@@ -23,10 +23,16 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
     padding: 15px 25px;
+    border-radius: 4px;
     background: ${( {background} ) => background || "rgba(221,220,222,183)"};
     font-size: 18px;
-    color: rgba(43,43,43,160);
+    color: rgba(43, 43, 43, 160);
     border: none;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
     ${( {secondary} ) => secondary && `
        padding: 10px 20px;
 `}
