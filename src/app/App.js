@@ -7,7 +7,7 @@ import playIcon from "./assets/icons/play.svg"
 import plusIcon from "./assets/icons/plus.svg"
 import Header from "core/ui/components/styled-components/Header";
 import Input from "core/ui/components/styled-components/Input";
-import Select from "../core/ui/components/styled-components/Select";
+import SongList from "../core/ui/components/SongList";
 
 function App() {
     return (
@@ -31,6 +31,7 @@ function App() {
                             </Button>
                         </Flex>
                         <Flex justify="space-between" align="center">
+                            <Button>Track Number</Button>
                             <Input/>
                             <Select />
                         </Flex>
